@@ -1,0 +1,87 @@
+/* PAGE-SPECIFIC STYLES FOR THE PROJECTS PAGE */
+/*-- -------------------------- -->
+<---          Gallery           -->
+<--- -------------------------- -*/
+/* Mobile - 360px - Contains hover animation */
+@media only screen and (min-width: 0rem) {
+  #gallery {
+    position: relative;
+    /* Prevents overflow from the image going off screen */
+    overflow: hidden;
+    padding: var(--sectionPadding);
+    /* Centers button */
+    text-align: center;
+  }
+  #gallery .bespoke-container {
+    margin: auto;
+    max-width: 82.625em;
+    width: 100%;
+  }
+  #gallery .bespoke-image-group {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto 3.75rem;
+    max-width: 82.625em;
+    width: 100%;
+    padding: 0;
+    /* used rem so it doesn't scale with the font size of on parent */
+    font-size: min(1.1vw, 1em);
+    gap: 1.875em;
+  }
+  #gallery .bespoke-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.875em;
+  }
+  #gallery .bespoke-picture {
+    position: relative;
+    display: block;
+  }
+  #gallery .bespoke-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #gallery .bespoke-row-1 .bespoke-picture1 {
+    height: 35.4375em;
+    width: 26.25em;
+  }
+  #gallery .bespoke-row-1 .bespoke-picture2 {
+    height: 39.3125em;
+    width: 26.25em;
+  }
+  #gallery .bespoke-row-1 .bespoke-picture3 {
+    height: 32em;
+    width: 26.25em;
+  }
+  #gallery .bespoke-row-2 .bespoke-picture1 {
+    height: 30.75em;
+    width: 26.25em;
+  }
+  #gallery .bespoke-row-2 .bespoke-picture2 {
+    height: 32.3125em;
+    width: 26.25em;
+  }
+  #gallery .bespoke-row-2 .bespoke-picture3 {
+    height: 39.3125em;
+    width: 26.25em;
+  }
+  #gallery .bespoke-row-3 .bespoke-picture1 {
+    height: 39.0625em;
+    width: 26.25em;
+  }
+  #gallery .bespoke-row-3 .bespoke-picture2 {
+    height: 28.25em;
+    width: 26.25em;
+  }
+  #gallery .bespoke-row-3 .bespoke-picture3 {
+    height: 39.3125em;
+    width: 26.25em;
+  }
+}
