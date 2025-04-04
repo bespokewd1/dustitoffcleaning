@@ -91,7 +91,7 @@
                 </ul>
             </div>
         </nav>
-        <a href="tel:587-335-2755" class="bespoke-button-solid bespoke-nav-button"><img src="/assets/svgs/smartphone.svg" class="bespoke-icon"/> 587-335-2755</a>
+        <a href="{ client.phoneForTel }" class="bespoke-button-solid bespoke-nav-button"><img src="/assets/svgs/smartphone.svg" class="bespoke-icon"/> { client.phoneFormatted }</a>
         <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
         <button id="dark-mode-toggle" aria-label="dark mode toggle" tabindex="3">
             <svg class="bespoke-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480"
@@ -220,7 +220,7 @@
                     </ul>
                 </div>
             </nav>
-            <a class="bespoke-call" href="tel:587-335-2755">
+            <a class="bespoke-call" href="{ client.phoneForTel }">
                 <picture class="bespoke-wrapper">
                     <img class="bespoke-icon" loading="lazy" decoding="async"
                         src="{{ client.domain }}/assets/svgs/smartphone.svg" alt="icon"
@@ -228,7 +228,7 @@
                 </picture>
                 <div class="bespoke-info">
 
-                    <span class="bespoke-link-content"> 587-335-2755</span>
+                    <span class="bespoke-link-content"> { client.phoneFormatted }</span>
                 </div>
             </a>
         </div>
