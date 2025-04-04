@@ -42,7 +42,7 @@ eleventyNavigation:
             "@type": "LocalBusiness",
             "name": "{{ client.name }}",
             {% if preloadImg %}"image": "{{ preloadImg }}",{% endif %}
-            {% if client.phoneFormatted %}"telephone": "{{{ client.PhoneFormatted }}}",{% endif %}
+            {% if client.phoneFormatted %}"telephone": "{{ client.PhoneFormatted }}",{% endif %}
             {% if client.email %}"email": "{{ client.email }}",{% endif %}
             {% if client.address %}
                 "address": {
