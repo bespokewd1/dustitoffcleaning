@@ -42,7 +42,7 @@ eleventyNavigation:
             "@type": "LocalBusiness",
             "name": "{{ client.name }}",
             {% if preloadImg %}"image": "{{ preloadImg }}",{% endif %}
-            {% if client.phoneFormatted %}"telephone": "{{ client.phoneFormatted }}",{% endif %}
+            {% if client.phoneFormatted %}"telephone": "{{{ client.PhoneFormatted }}}",{% endif %}
             {% if client.email %}"email": "{{ client.email }}",{% endif %}
             {% if client.address %}
                 "address": {
@@ -102,7 +102,7 @@ Doing this will complete the overlapping "breaking the container" look.
                     <li class="bespoke-li"><img aria-hidden="true" decoding="async" src="/assets/svgs/check.svg" class="bespoke-check" alt="check" width="20" height="20"/>Move-In/Move-Out</li>
                     <li class="bespoke-li"><img aria-hidden="true" decoding="async" src="/assets/svgs/check.svg" class="bespoke-check" alt="check" width="20" height="20"/>Post-Construction & More</li>
                 </ul>
-            <a href="{ client.phoneForTel }" class="bespoke-button-solid">GET A FREE QUOTE</a>
+            <a href="{{ client.PhoneForTel }}" class="bespoke-button-solid">GET A FREE QUOTE</a>
             <h4 class="bespoke-title bespoke-subtitle">Our Services</h4>
         </div>
     </div>
@@ -319,7 +319,7 @@ Doing this will complete the overlapping "breaking the container" look.
     <div class="bespoke-container">
         <div class="bespoke-content">
             <h3 class="bespoke-title">15% discount for new customers!</h3>
-            <a href="{ client.phoneForTel }" class="bespoke-button-solid">Call Now</a>
+            <a href="{{ client.PhoneForTel }}" class="bespoke-button-solid">Call Now</a>
         </div>
     </div>
     <!-- Background Image-->
