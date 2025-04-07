@@ -1930,15 +1930,31 @@
             .split{
                 display: flex;
                 .left{
-                    text-align: left;
+                    width: 45%;
+                    padding-left: 32px;
+                    .title{
+                        text-align: left;
+                    }
+                    p{
+                        text-align: left;
+                    }
                 }
                 .right{
-                    display: flex;
-                    gap: 16px;
+                    width: 55%;
+                    .card-container{
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        justify-content: space-around;
+                        .card{
+                            width: 30%;
+                        }
+                    }
                 }
             } 
             .cta-container{
                 width: 100%;
+                padding-left: 32px;
                 display: flex;
                 justify-content: left;
                 gap: 16px;
