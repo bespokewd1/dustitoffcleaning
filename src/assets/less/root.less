@@ -2038,15 +2038,6 @@
 @media only screen and (min-width: 64rem) {
     #cta {
         padding: (168/16rem) 0;
-    }
-}
-
-/* Large Desktop */
-@media only screen and (min-width: 1300px) {
-    #cta {
-        position: relative;
-        margin-top: (100/16rem);
-
         .container {
             margin: auto;
             width: 90.0625%;
@@ -2097,13 +2088,21 @@
                 }
             } 
             .cta-container{
-                width: 100%;
+                width: 42%;
                 padding-left: 32px;
                 display: flex;
                 justify-content: left;
                 gap: 16px;
             }
         }
+    }
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+    #cta {
+        position: relative;
+        margin-top: (100/16rem);
 
         picture {
             left: 50%;
@@ -2148,7 +2147,9 @@
 }
 
 @media only screen and (min-width: 1420px) {
-    
+    .card-container{
+        display: flex;
+    }
 }
 
 /* Dark Mode */
