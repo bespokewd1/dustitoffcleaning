@@ -1927,14 +1927,16 @@
         padding: (50/16rem) 0;
 
         .container {
-            display: flex;
-            .left{
-                text-align: left;
-            }
-            .right{
+            .split{
                 display: flex;
-                gap: 16px;
-            }
+                .left{
+                    text-align: left;
+                }
+                .right{
+                    display: flex;
+                    gap: 16px;
+                }
+            } 
             .cta-container{
                 width: 100%;
                 display: flex;
