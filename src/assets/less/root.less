@@ -1927,7 +1927,20 @@
         padding: (50/16rem) 0;
 
         .container {
-            text-align: center;
+            display: flex;
+            .left{
+                text-align: left;
+            }
+            .right{
+                display: flex;
+                gap: 16px;
+            }
+            .cta-container{
+                width: 100%;
+                display: flex;
+                justify-content: left;
+                gap: 16px;
+            }
         }
 
         picture {
