@@ -1961,10 +1961,10 @@
 
                             }
                             .logo{
-                                height: 32px;
+                                height: 4rem;
+                                margin-bottom: 1rem;
                                 img{
-                                    height: 32px;
-                                    color-scheme: var(--bodyTextColorWhite);
+                                    height: 4rem;
                                 }
                             }
                         }
@@ -2032,7 +2032,6 @@
         }
     }
 }
-
 /* Small Desktop */
 @media only screen and (min-width: 64rem) {
     #cta {
@@ -2049,6 +2048,57 @@
         .container {
             margin: auto;
             width: 90.0625%;
+            .split{
+                display: flex;
+                .left{
+                    width: 40%;
+                    padding-left: 32px;
+                    padding-right: 16px;
+                    .title{
+                        text-align: left;
+                    }
+                    p{
+                        text-align: left;
+                    }
+                }
+                .right{
+                    width: 60%;
+                    align-content: center;
+                    .card-container{
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        justify-content: space-around;
+                        .card{
+                            width: 30%;
+                            text-align: left;
+                            p{
+                                text-align: left;
+                                margin-left: 0;
+                                margin-bottom: 16px;
+                            }
+                            h3{
+                                color: #fff;
+
+                            }
+                            .logo{
+                                height: 4rem;
+                                margin-bottom: 1rem;
+                                img{
+                                    height: 4rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            } 
+            .cta-container{
+                width: 100%;
+                padding-left: 32px;
+                display: flex;
+                justify-content: left;
+                gap: 16px;
+            }
         }
 
         picture {
@@ -2091,6 +2141,10 @@
             width: (2000/16rem);
         }
     }
+}
+
+@media only screen and (min-width: 1420px) {
+    
 }
 
 /* Dark Mode */
