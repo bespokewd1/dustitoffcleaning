@@ -27,26 +27,27 @@ The best part? The process was simple, stress-free, and definitely worth the inv
 
 In addition to a stunning new website, we also opted for Bespoke Web Design’s Brand & Identity Marketing Package, which includes:
 
-1. A Fully Custom Website
+1. **A Fully Custom Website**
+
 Built around our vision, not a generic template.
 
-2. 5 Personalized Social Media Assets Every Month
+2. **5 Personalized Social Media Assets Every Month**
 
 Custom graphics for our promotions & events, making it easy to post while focusing on our core services.
 
-3. Lightning-Fast & SEO-Friendly
+3. **Lightning-Fast & SEO-Friendly**
 
 Built with vanilla JavaScript and MS Visual Studio Code, ensuring optimal speed and search engine performance.
 
-4. A Working Blog
+4. **A Working Blog**
 
 Now we can share cleaning tips, industry insights, and updates with our clients.
 
-5. Unlimited Edits
+5. **Unlimited Edits**
 
 We can update content anytime as our business grows and evolves.
 
-6. Banners for Special Offers
+6. **Banners for Special Offers**
 
 Easy-to-see promotions, discounts, and offers for customers.
 
@@ -72,7 +73,7 @@ Bespoke Web Design’s team designed, developed, and launched our custom website
 
 **Improved User Interface (UI)**
 
-- A sleek, intuitive design for a smoother user experience.
+– A sleek, intuitive design for a smoother user experience.
 
 **Modern, Lightweight Design**
 
