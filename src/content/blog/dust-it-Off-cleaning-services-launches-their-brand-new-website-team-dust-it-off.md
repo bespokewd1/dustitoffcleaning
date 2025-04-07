@@ -70,35 +70,35 @@ Bespoke Web Design’s team designed, developed, and launched our custom website
 
 ### Key Improvements in Our Website Upgrade
 
-1. Improved User Interface (UI)
+**Improved User Interface (UI)**
 
 - A sleek, intuitive design for a smoother user experience.
 
-2. Modern, Lightweight Design
+**Modern, Lightweight Design**
 
 – Built using vanilla JavaScript for faster loading and enhanced performance.
 
-3. Enhanced Gallery
+**Enhanced Gallery**
 
 – A more visually appealing and easy-to-navigate gallery to showcase our services.
 
-4. Admin Blog
+**Admin Blog**
 
 – A simple admin panel for effortlessly managing blog posts and updates.
 
-5. Sticky Phone Number
+**Sticky Phone Number**
 
 – A clickable phone number that stays visible as you scroll for easy contact access.
 
-6. SEO Optimization
+**SEO Optimization**
 
 – Our website’s structure and code are now optimized to rank better on search engines, giving us a stronger SEO foundation.
 
-7. Mobile Responsiveness
+**Mobile Responsiveness**
 
 – Ensured that our website functions seamlessly across all devices, providing a consistent experience for all users.
 
-8. Custom Forms & CTAs
+**Custom Forms & CTAs**
 
 – Tailored forms for lead generation and effective calls-to-action to boost engagement.
 
