@@ -72,11 +72,10 @@ module.exports = function (eleventyConfig) {
     ========================================================================*/
     /** https://www.11ty.dev/docs/copy/ */
 
-    // eleventyConfig.addPassthroughCopy("./src/assets", {
-    //     filter: ["**/*", "!**/*.js"],
-    // });
-    eleventyConfig.addPassthroughCopy("./src/assets");
-    eleventyConfig.addPassthroughCopy("./src/assets/js");
+    eleventyConfig.addPassthroughCopy("./src/assets", {
+        filter: ["**/*", "!**/*.js"],
+    });
+    eleventyConfig.addPassthroughCopy("./src/scripts");
     eleventyConfig.addPassthroughCopy("./src/admin");
     eleventyConfig.addPassthroughCopy("./src/_redirects");
     /**=====================================================================
