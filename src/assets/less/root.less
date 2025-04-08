@@ -4034,6 +4034,16 @@
             justify-content: center;
             /* 48px - 64px */
             gap: clamp(3rem, 7vw, 4rem);
+
+            &.bespoke-services-container{
+                gap: 0;
+
+                .bespoke-title{
+                    margin-bottom: -1.5rem;
+                    margin-top: 2rem;
+                    text-align: left;
+                }
+            }
         }
 
         .bespoke-content {
@@ -4278,6 +4288,8 @@
             padding: .5rem;
             border-radius: 100%;
             box-sizing: content-box;
+            aspect-ratio: 1/1;
+            object-fit: contain;
 
         }
 
@@ -4378,6 +4390,16 @@
         .bespoke-container {
             justify-content: flex-start;
             flex-direction: row;
+
+            &.bespoke-services-container{
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+
+                .bespoke-title{
+                    margin-bottom:0;
+                }
+            }
         }
 
         .bespoke-content {
