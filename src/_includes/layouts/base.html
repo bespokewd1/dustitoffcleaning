@@ -4,57 +4,144 @@
 <html lang="en">
     <head>
         <!-- Standard meta tags -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="{{ description }}">
-        <meta name="keywords" content="">
-        <link rel="canonical" href="{{ client.domain }}{{ page.url }}">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="{{ description }}" />
+        <meta name="keywords" content="" />
+        <link rel="canonical" href="{{ client.domain }}{{ page.url }}" />
 
         <!--Social Media Display-->
-        <meta property="og:title" content="{{ title }}"/>
-        <meta property="og:description" content="{{ description }}"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:url" content="{{ client.domain }}{{ page.url }}"/>
-        <meta property="og:image" content="{{ client.domain }}/assets/images/yeg-cc-og.jpg"/>
-        <meta property="og:image:secure_url" content="{{ client.domain }}/assets/images/yeg-cc-og.jpg"/>
+        <meta property="og:title" content="{{ title }}" />
+        <meta property="og:description" content="{{ description }}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="{{ client.domain }}{{ page.url }}" />
+        <meta
+            property="og:image"
+            content="{{ client.domain }}/assets/images/yeg-cc-og.jpg"
+        />
+        <meta
+            property="og:image:secure_url"
+            content="{{ client.domain }}/assets/images/yeg-cc-og.jpg"
+        />
 
         <!--Favicons-->
-        <link rel="icon" type="image/png" href="{{ client.domain }}/assets/favicons/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="{{ client.domain }}/assets/favicons/favicon.svg" />
-        <link rel="shortcut icon" href="{{ client.domain }}/assets/favicons/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="{{ client.domain }}/assets/favicons/apple-touch-icon.png" />
-        <link rel="manifest" href="{{ client.domain }}/assets/favicons/site.webmanifest" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="{{ client.domain }}/assets/favicons/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="{{ client.domain }}/assets/favicons/favicon.svg"
+        />
+        <link
+            rel="shortcut icon"
+            href="{{ client.domain }}/assets/favicons/favicon.ico"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="{{ client.domain }}/assets/favicons/apple-touch-icon.png"
+        />
+        <link
+            rel="manifest"
+            href="{{ client.domain }}/assets/favicons/site.webmanifest"
+        />
 
         <!-- Preloads -->
-        <link rel="preload" as="image" href="{{ client.domain }}/assets/images/yeg-logo.png">
-        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
-        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+        <link
+            rel="preload"
+            as="image"
+            href="{{ client.domain }}/assets/images/yeg-logo.png"
+        />
+        <link
+            rel="preload"
+            as="font"
+            type="font/woff2"
+            href="/assets/fonts/roboto-v29-latin-regular.woff2"
+            crossorigin
+        />
+        <link
+            rel="preload"
+            as="font"
+            type="font/woff2"
+            href="/assets/fonts/roboto-v29-latin-700.woff2"
+            crossorigin
+        />
 
         <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
         {% if preloadImg != '' %}
-            <link rel="preload" as="image" href="{{ preloadImg }}"/>
+        <link rel="preload" as="image" href="{{ preloadImg }}" />
         {% endif %}
 
         <!-- Sitewide Stylesheets and Scripts -->
-        <link rel="stylesheet" href="/assets/css/root.css">
-        <link rel="stylesheet" href="/assets/css/dark.css">
+        <link rel="stylesheet" href="/assets/css/root.css" />
+        <link rel="stylesheet" href="/assets/css/dark.css" />
         <script defer src="/assets/js/dark.js"></script>
         <script defer src="/assets/js/nav.js"></script>
 
+        <!-- Blaze Assets (Load CSS in head) -->
+        <link rel="stylesheet" href="/assets/css/blaze.css" />
+        <!-- Blaze JS Library (Load in head with defer OR at end of body BEFORE init script) -->
+        <script src="/assets/js/blaze-slider.dev.js" defer></script>
         {% block head %}{% endblock %}
 
         <title>{{ title }}</title>
     </head>
     <body>
         <!--Screen reader skip main nav-->
-        <a class="skip" aria-label="skip to main content" href="#main" tabindex="1">Click To Skip To Main Content</a>
+        <a
+            class="skip"
+            aria-label="skip to main content"
+            href="#main"
+            tabindex="1"
+            >Click To Skip To Main Content</a
+        >
 
         {% include "components/header.html" %}
-        <main id="main">
-            {% block body %}{% endblock %}
-        </main>
+        <main id="main">{% block body %}{% endblock %}</main>
         {% include "components/footer.html" %}
 
+        <script>
+            // Wait for the DOM to be fully loaded before trying to initialize
+            document.addEventListener("DOMContentLoaded", function () {
+                // Find ALL elements with the .blaze-slider class on the page
+                const sliders = document.querySelectorAll(".blaze-slider");
+
+                // Check if any sliders were found
+                if (sliders.length > 0) {
+                    console.log(
+                        `Found ${sliders.length} Blaze Slider element(s). Initializing...`
+                    );
+                    sliders.forEach((sliderElement, index) => {
+                        try {
+                            // Initialize Blaze Slider for each found element
+                            new BlazeSlider(sliderElement);
+                            console.log(
+                                `Blaze Slider ${
+                                    index + 1
+                                } initialized successfully.`
+                            );
+                        } catch (error) {
+                            console.error(
+                                `Error initializing Blaze Slider ${
+                                    index + 1
+                                } for element:`,
+                                sliderElement,
+                                error
+                            );
+                        }
+                    });
+                } else {
+                    // This is normal if the current page doesn't have a slider
+                    console.log(
+                        "No .blaze-slider elements found on this page."
+                    );
+                }
+            });
+        </script>
     </body>
 </html>
