@@ -993,10 +993,23 @@
         }
 
         .bespoke-li {
-            padding: (32/16rem) 0;
+            padding: 3rem 0;
             list-style: none;
             /* prevent flexbox from squishing it */
             flex: none;
+
+            &.bespoke-dropdown{
+
+                .bespoke-drop-icon{
+                    transition: transform 0.3s;
+                }
+
+                &:hover{
+                    .bespoke-drop-icon{
+                        transform: rotate(180deg);
+                    }
+                }
+            }
         }
 
         .bespoke-li-link {
@@ -1013,6 +1026,8 @@
                 &:before {
                     width: 100%;
                 }
+
+
             }
 
             &:before {

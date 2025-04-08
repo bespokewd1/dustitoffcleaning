@@ -803,10 +803,16 @@
     gap: clamp(1.25rem, 2.6vw, 2.25rem);
   }
   #bespoke-navigation .bespoke-li {
-    padding: 2rem 0;
+    padding: 3rem 0;
     list-style: none;
     /* prevent flexbox from squishing it */
     flex: none;
+  }
+  #bespoke-navigation .bespoke-li.bespoke-dropdown .bespoke-drop-icon {
+    transition: transform 0.3s;
+  }
+  #bespoke-navigation .bespoke-li.bespoke-dropdown:hover .bespoke-drop-icon {
+    transform: rotate(180deg);
   }
   #bespoke-navigation .bespoke-li-link {
     position: relative;
