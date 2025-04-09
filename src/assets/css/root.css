@@ -2962,6 +2962,10 @@
   #sbs-1443 .bespoke-text:last-of-type {
     margin-bottom: 2rem;
   }
+  #sbs-1443 .bespoke-link-group {
+    display: flex;
+    gap: 1rem;
+  }
   #sbs-1443 .bespoke-card-group {
     width: 100%;
     max-width: 39.375rem;
