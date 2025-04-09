@@ -221,17 +221,8 @@
                     </ul>
                 </div>
             </nav>
-            <a class="bespoke-call" href="tel:{{client.phoneForTel}}">
-                <picture class="bespoke-wrapper">
-                    <img class="bespoke-icon" loading="lazy" decoding="async"
-                        src="{{ client.domain }}/assets/svgs/smartphone.svg" alt="icon"
-                        width="24" height="24">
-                </picture>
-                <div class="bespoke-info">
-
-                    <span class="bespoke-link-content"> {{client.phoneFormatted}}</span>
-                </div>
-            </a>
+            <a href="tel:{{client.phoneForTel}}" class="bespoke-button-solid">Call for Quote</a>
+            <a href="#" class="bespoke-button-solid">Book Online</a>
         </div>
     </div>
 </header>
