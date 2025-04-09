@@ -1,0 +1,56 @@
+<div class="sticky-div">
+  <a href="tel:{{ client.phoneForTel }}" class="bespoke-button-solid "
+    >Call Now
+  </a>
+  <a href="tel:{{ client.phoneForTel }}" class="bespoke-button-solid">
+    Get a Free Quote
+  </a>
+</div>
+
+<style>
+  .sticky-div {
+    position: fixed;
+    bottom: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    z-index: 100;
+    transition:
+      transform 500ms ease-in,
+      visibility 500ms ease-in,
+      opacity 500ms ease-in;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+
+      @starting-style {
+
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(50%);
+      }
+  }
+
+  .sticky-div .bespoke-button-solid {
+      padding: 0.8rem;
+      line-height: 1.5;
+      border-radius: var(--btn-b-radius);
+  }
+
+  .sticky-div .bespoke-button-solid::after {
+    border-radius: var(--btn-b-radius);
+  }
+
+  .cs-button-solid.sticky-button {
+    margin: auto;
+    border-radius: 70px;
+    background-color: var(--secondary);
+  }
+
+
+  @media (min-width: 821px) {
+    .sticky-div {
+      display: none;
+    }
+  }
+</style>

@@ -229,6 +229,10 @@
     margin: auto;
     max-width: 33.875rem;
   }
+  #sbs-r .bespoke-right ul {
+    width: 90%;
+    margin: auto;
+  }
   #sbs-r .bespoke-topper {
     margin-bottom: 0.25rem;
     text-align: left;

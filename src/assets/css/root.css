@@ -19,6 +19,7 @@
     --bodyFontSize: 1rem;
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+    --btn-b-radius: 4px;
   }
   .bespoke-topper {
     display: block;
@@ -310,6 +311,7 @@
     object-fit: contain;
     /* places the image to the left edge of the parent */
     object-position: left;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.15));
   }
   #bespoke-navigation .bespoke-toggle {
     display: flex;
@@ -791,6 +793,7 @@
     /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: contain;
     object-position: left;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
   }
   #bespoke-navigation .bespoke-ul {
     display: flex;
@@ -1192,7 +1195,6 @@
     content: "";
     width: 3rem;
     height: 3rem;
-    background: #eff1f0;
     border-radius: 1.5rem;
     opacity: 1;
     position: absolute;
@@ -1258,7 +1260,7 @@
   }
   #bespoke-mobile-navigation .bespoke-logo {
     /* makes it white */
-    filter: grayscale(1) brightness(1000%);
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.15));
   }
   body.dark-mode #bespoke-mobile-navigation .bespoke-ul-wrapper {
     background-color: var(--dark);
