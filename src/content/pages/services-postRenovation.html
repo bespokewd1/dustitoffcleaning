@@ -20,7 +20,7 @@ eleventyNavigation:
     <!-- ============================================ -->
     <!--                    LANDING                   -->
     <!-- ============================================ -->
-     
+
     <section id="int-hero">
         <h1 id="home-h">Post-Renovation Cleaning</h1>
         <picture>
@@ -46,8 +46,8 @@ eleventyNavigation:
                 <h2 class="bespoke-title">Post-Renovation Cleaning in Edmonton</h2>
                 <p class="bespoke-text">
                     Post-renovation cleaning is a specialized service that removes fine dust, paint splatters, and leftover construction materials after remodeling work. This service includes deep cleaning of all affected areas, including kitchens, bathrooms, and living spaces, to restore your home to a clean and livable condition.
-                </p>    
-                <a href="/contact/" class="bespoke-button-solid">Book for a Service Now</a>        
+                </p>
+                <a href="/contact/" class="bespoke-button-solid">Book for a Service Now</a>
             </div>
         </div>
     </section>
@@ -56,72 +56,7 @@ eleventyNavigation:
     <!--                  Why Choose                  -->
     <!-- ============================================ -->
 
-    <section id="why-choose-1550">
-        <div class="bespoke-container">
-        <div id="bespoke-content">
-            <h2 class="bespoke-title">Why Choose Us</h2>
-        </div>
-            <ul class="bespoke-card-group">
-                <li class="bespoke-item">
-                    <div class="bespoke-icon-wrapper">
-                        <img class="bespoke-icon" loading="lazy" decoding="async"
-                                src="{{ client.domain }}/assets/svgs/satisfaction.svg" alt="icon"
-                                width="48" height="48">
-                    </div>
-                    <div class="bespoke-flex">
-                        <h2 class="bespoke-h2">3+ Years of Trusted Cleaning Service in Edmonton</h2>
-                    </div>
-                </li>
-                <li class="bespoke-item">
-                    <div class="bespoke-icon-wrapper">
-                        <img class="bespoke-icon" loading="lazy" decoding="async"
-                                src="{{ client.domain }}/assets/svgs/local.svg"
-                                alt="icon" width="48" height="48">
-                    </div>
-                    <div class="bespoke-flex">
-                        <h2 class="bespoke-h2"> Eco-Friendly & Safe Cleaning Products</h2>
-                    </div>
-                </li>
-                <li class="bespoke-item">
-                    <div class="bespoke-icon-wrapper">
-                        <img class="bespoke-icon" loading="lazy" decoding="async"
-                                src="{{ client.domain }}/assets/svgs/value.svg" alt="icon"
-                                width="48" height="48">
-                    </div>
-                    <div class="bespoke-flex">
-                        <h2 class="bespoke-h2">Affordable & Transparent Pricing</h2>
-                    </div>
-                </li>
-                <li class="bespoke-item">
-                    <div class="bespoke-icon-wrapper">
-                        <img class="bespoke-icon" loading="lazy" decoding="async"
-                                src="{{ client.domain }}/assets/svgs/outstanding.svg" alt="icon"
-                                width="48" height="48">
-                    </div>
-                    <div class="bespoke-flex">
-                        <h2 class="bespoke-h2"> Experienced & Insured Cleaners</h2>
-                    </div>
-                </li>
-                <li class="bespoke-item">
-                    <div class="bespoke-icon-wrapper">
-                        <img class="bespoke-icon" loading="lazy" decoding="async"
-                                src="{{ client.domain }}/assets/svgs/outstanding.svg" alt="icon"
-                                width="48" height="48">
-                    </div>
-                    <div class="bespoke-flex">
-                        <h2 class="bespoke-h2">100% Customer Satisfaction Guarantee</h2>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <picture class="bespoke-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{{ client.domain }}/assets/images/why-choose-us-bg.webp">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="{{ client.domain }}/assets/images/why-choose-us-bg.webp">
-            <img loading="lazy" decoding="async" src="{{ client.domain }}/assets/images/why-choose-us-bg.webp" alt="texture" width="1920" height="550">
-        </picture>
-    </section>
+    {% include 'components/why-choose-us.html' %}
 
 
     <!-- ============================================ -->
@@ -150,7 +85,7 @@ eleventyNavigation:
                     <a href="tel:{{client.phoneForTel}}" class="bespoke-button-solid">
                         📞&nbsp;Call&nbsp;for&nbsp;FREE&nbsp;QUOTE
                       </a>
-    
+
             </div>
             <div class="bespoke-content">
                 <form netlify class="bespoke-form" id="bespoke-form-322" name="Contact Form" method="post">
@@ -197,7 +132,7 @@ eleventyNavigation:
             <img loading="lazy" decoding="async" src="/assets/images/yeg_cc-hero.webp" alt="buildings" width="1280" height="568">
         </picture>
     </section>
-                                                                  
+
 
     <!-- ============================================ -->
     <!--                     CTA                      -->

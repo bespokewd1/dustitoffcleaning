@@ -246,7 +246,7 @@ Doing this will complete the overlapping "breaking the container" look.
             <span class="bespoke-topper">About Us</span>
             <h2 class="bespoke-title">Dust it off Cleaning Services - Edmonton</h2>
             <p class="bespoke-text">
-                At Dust It Off Cleaning Services, we provide reliable, top-quality cleaning for homes and businesses. From move-in/move-out to post-construction and general cleaning, we’re proud to be a trusted name in Edmonton.
+                At Dust It Off Cleaning Services, we provide reliable, top-quality cleaning for homes and businesses. From move-in/move-out to post-construction and general cleaning, we're proud to be a trusted name in Edmonton.
             </p>
             <p class="bespoke-text">
                 We offer comprehensive cleaning services, including residential, commercial, carpet cleaning, deep cleaning, stain removal, and upholstery cleaning. With a commitment to integrity and customer satisfaction, our team ensures every space is fresh, spotless, and inviting. Whether for your home or business, you can count on us for exceptional service.
@@ -270,72 +270,8 @@ Doing this will complete the overlapping "breaking the container" look.
 <!--                  Why Choose                  -->
 <!-- ============================================ -->
 
-<section id="why-choose-1550">
-    <div class="bespoke-container">
-    <div id="bespoke-content">
-        <h2 class="bespoke-title">Why Choose Us</h2>
-    </div>
-        <ul class="bespoke-card-group">
-            <li class="bespoke-item">
-                <div class="bespoke-icon-wrapper">
-                    <img class="bespoke-icon" loading="lazy" decoding="async"
-                            src="{{ client.domain }}/assets/svgs/satisfaction.svg" alt="icon"
-                            width="48" height="48">
-                </div>
-                <div class="bespoke-flex">
-                    <h2 class="bespoke-h2">3+ Years of Trusted Cleaning Service in Edmonton</h2>
-                </div>
-            </li>
-            <li class="bespoke-item">
-                <div class="bespoke-icon-wrapper">
-                    <img class="bespoke-icon" loading="lazy" decoding="async"
-                            src="{{ client.domain }}/assets/svgs/local.svg"
-                            alt="icon" width="48" height="48">
-                </div>
-                <div class="bespoke-flex">
-                    <h2 class="bespoke-h2"> Eco-Friendly & Safe Cleaning Products</h2>
-                </div>
-            </li>
-            <li class="bespoke-item">
-                <div class="bespoke-icon-wrapper">
-                    <img class="bespoke-icon" loading="lazy" decoding="async"
-                            src="{{ client.domain }}/assets/svgs/value.svg" alt="icon"
-                            width="48" height="48">
-                </div>
-                <div class="bespoke-flex">
-                    <h2 class="bespoke-h2">Affordable & Transparent Pricing</h2>
-                </div>
-            </li>
-            <li class="bespoke-item">
-                <div class="bespoke-icon-wrapper">
-                    <img class="bespoke-icon" loading="lazy" decoding="async"
-                            src="{{ client.domain }}/assets/svgs/outstanding.svg" alt="icon"
-                            width="48" height="48">
-                </div>
-                <div class="bespoke-flex">
-                    <h2 class="bespoke-h2"> Experienced & Insured Cleaners</h2>
-                </div>
-            </li>
-            <li class="bespoke-item">
-                <div class="bespoke-icon-wrapper">
-                    <img class="bespoke-icon" loading="lazy" decoding="async"
-                            src="{{ client.domain }}/assets/svgs/outstanding.svg" alt="icon"
-                            width="48" height="48">
-                </div>
-                <div class="bespoke-flex">
-                    <h2 class="bespoke-h2">100% Customer Satisfaction Guarantee</h2>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <picture class="bespoke-background">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="{{ client.domain }}/assets/images/why-choose-us-bg.webp">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="{{ client.domain }}/assets/images/why-choose-us-bg.webp">
-        <img loading="lazy" decoding="async" src="{{ client.domain }}/assets/images/why-choose-us-bg.webp" alt="texture" width="1920" height="550">
-    </picture>
-</section>
+{% include 'components/why-choose-us.html' %}
+
 <!-- ============================================ -->
 <!--               Before And After               -->
 <!-- ============================================ -->
@@ -535,7 +471,7 @@ Doing this will complete the overlapping "breaking the container" look.
                     Kelvin and Bennett—10 Years of Carpet Grime Gone!
                 </p>
                 <p class="bespoke-item-text">
-                    We hadn’t had the carpets cleaned since we moved in...over 10 years ago! With two dogs and a couple of birds in the mix, you can imagine the kind of mess that’s built up. But after putting it off for so long, we finally decided to call in the pros, and we couldn’t be happier we went with Kelvin and Bennett!
+                    We hadn't had the carpets cleaned since we moved in...over 10 years ago! With two dogs and a couple of birds in the mix, you can imagine the kind of mess that's built up. But after putting it off for so long, we finally decided to call in the pros, and we couldn't be happier we went with Kelvin and Bennett!
                 </p>
                 <div class="bespoke-flex">
                     <span class="bespoke-name">Renz</span>
@@ -593,11 +529,11 @@ Doing this will complete the overlapping "breaking the container" look.
                                         src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/stars-gym.svg"
                                         alt="quotes" width="97" height="80" aria-hidden="true">
                                     <p class="cs-review-text">
-                                        ”We worked with Jack at KMS when we had our basement contracted. He did all the
+                                        "We worked with Jack at KMS when we had our basement contracted. He did all the
                                         plumbing for our basement bathroom. He provides high quality work and very
                                         pleasant to work with. When we had an issue, he came out same day and kept in
                                         contact with me to ensure it got completed. He even followed up to ensure all
-                                        was working well. I would hire again.”
+                                        was working well. I would hire again."
                                     </p>
                                     <span class="cs-name">Miles McMillan</span>
                                     <img src="{{ client.domain }}/assets/images/google-review-icon.webp" height=50 />
@@ -616,10 +552,10 @@ Doing this will complete the overlapping "breaking the container" look.
                                         src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/stars-gym.svg"
                                         alt="quotes" width="97" height="80" aria-hidden="true">
                                     <p class="cs-review-text">
-                                        ”Jack installed a new faucet and some upgraded sink components for us; the
+                                        "Jack installed a new faucet and some upgraded sink components for us; the
                                         service and workmanship were fantastic. He was very thorough in assessing our
                                         needs/expectations prior to the job; the customer service was excellent
-                                        throughout our experience. I highly recommend KMS Plumbing.”
+                                        throughout our experience. I highly recommend KMS Plumbing."
                                     </p>
                                     <span class="cs-name">Dave O.</span>
                                     <img src="{{ client.domain }}/assets/images/google-review-icon.webp" height=50 />
@@ -638,11 +574,11 @@ Doing this will complete the overlapping "breaking the container" look.
                                         src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/stars-gym.svg"
                                         alt="quotes" width="97" height="80" aria-hidden="true">
                                     <p class="cs-review-text">
-                                        ”I just had my hot water tank replacement completed by Jack Kumar of KMS
+                                        "I just had my hot water tank replacement completed by Jack Kumar of KMS
                                         Plumbing & Gas fitting. Prior to this job, Jack had replaced a toilet for us and
                                         completed a hot water tank replacement for a senior friend of ours. As usual,
                                         Jack is on time and professional. His workmanship is great. Housekeeping is
-                                        excellent. Pricing is reasonable. Thanks for your service Jack.”
+                                        excellent. Pricing is reasonable. Thanks for your service Jack."
                                     </p>
                                     <span class="cs-name">Alex Chan</span>
                                     <img src="{{ client.domain }}/assets/images/google-review-icon.webp" height=50 />
