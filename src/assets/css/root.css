@@ -1424,6 +1424,17 @@
     justify-content: center;
     align-items: center;
   }
+  #bespoke-mobile-navigation .btn-container{
+    display: flex;
+    gap: 8px;
+}
+#bespoke-mobile-navigation .bespoke-button-solid{
+    font-size: 12px;
+    padding: 0;
+    background: var(--primary);
+    color: #fff;
+    min-width: 130px;
+}
   #bespoke-mobile-navigation .bespoke-container {
     width: 100%;
     max-width: 80rem;
