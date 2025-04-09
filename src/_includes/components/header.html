@@ -221,9 +221,23 @@
                     </ul>
                 </div>
             </nav>
-            <div class="btn-container">
-                <a href="#" class="bespoke-button-solid">Book Online</a>
-                <a href="tel:{{client.phoneForTel}}" class="bespoke-button-solid">Call for Quote</a>
+            <div class="btn-container" style="display: flex; gap: 8px;">
+                <a href="#" class="bespoke-button-solid"
+                 style="
+                 font-size: 12px;
+                 padding: 0;
+                 background: var(--primary);
+                 color: #fff;
+                 min-width: 130px;">
+                 Book Online</a>
+                <a href="tel:{{client.phoneForTel}}" class="bespoke-button-solid"
+                style="
+                font-size: 12px;
+                padding: 0;
+                background: var(--primary);
+                color: #fff;
+                min-width: 130px;">
+                Call for Quote</a>
             </div>
         </div>
     </div>
