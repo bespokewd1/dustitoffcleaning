@@ -10,7 +10,7 @@ module.exports = {
         "city": "Edmonton",
         "state": "Alberta",
         "zip": "T5S 0K2",
-        "mapLink": "https://maps.app.goo.gl/EMhoYYo3odJMG5bh9"
+        "mapLink": "https://maps.app.goo.gl/aPNtGBzRF4qHQ2rt9"
     },
     "social": {
         "facebook": "https://www.facebook.com/",
