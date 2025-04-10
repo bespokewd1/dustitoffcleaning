@@ -1,10 +1,7 @@
 <div class="sticky-div">
   <a href="tel:{{ client.phoneForTel }}" class="bespoke-button-solid "
-    >Call Now
-  </a>
-  <a href="/contact/" class="bespoke-button-solid">
-    Get a Free Quote
-  </a>
+    >Call for a Free Quote</a>
+  <a href="/contact/" class="bespoke-button-solid">Book Online</a>
 </div>
 
 <style>
@@ -23,6 +20,7 @@
     opacity: 1;
     transform: translateY(0);
     box-shadow: 0 -4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    display: none;
 
       @starting-style {
         visibility: hidden;
@@ -32,7 +30,7 @@
   }
 
   .sticky-div .bespoke-button-solid {
-      padding: 0.8rem 1rem;
+      padding: 0.5rem 1rem;
       line-height: 2rem;
       border-radius: 0;
       font-weight: 600;
