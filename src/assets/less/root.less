@@ -1971,7 +1971,7 @@
         .container {
             .split{
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 .left{
                     width: 100%;
                     .title{
@@ -1986,6 +1986,8 @@
                     width: 100%;
                     align-content: center;
                     .card-container{
+                        display: flex;
+                        justify-content: space-between;
                         align-items: center;
                         width: 100%;
                         .card{
@@ -1995,10 +1997,11 @@
                             p{
                                 text-align: center;
                                 margin: auto;
-                                margin-bottom: 16px;
+                                margin-bottom: 10px;
                             }
                             h3{
                                 color: #fff;
+                                font-size: 12px;
                             }
                             .logo{
                                 height: 4rem;
