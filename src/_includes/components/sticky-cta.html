@@ -10,7 +10,7 @@
 <style>
   .sticky-div {
     position: fixed;
-    bottom: 8px;
+    bottom: 0;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -22,9 +22,9 @@
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
+    box-shadow: 0 -4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 
       @starting-style {
-
         visibility: hidden;
         opacity: 0;
         transform: translateY(50%);
@@ -32,13 +32,35 @@
   }
 
   .sticky-div .bespoke-button-solid {
-      padding: 0.8rem;
-      line-height: 1.5;
-      border-radius: var(--btn-b-radius);
+      padding: 0.8rem 1rem;
+      line-height: 2rem;
+      border-radius: 0;
+      font-weight: 600;
+      font-size: 1rem;
+      text-transform: uppercase;
+      width: 50%;
+      text-align: center;
+      transition: background-color 0.3s ease;
+      box-shadow: none;
+      text-shadow: 0px 1px 2px rgb(0 0 0 / 0.1), 0px 3px 2px rgb(0 0 0 / 0.1), 0px 4px 8px rgb(0 0 0 / 0.1);
+  }
+
+  .sticky-div .bespoke-button-solid:first-child {
+      background-color: var(--primary);
+      color: white;
+  }
+
+  .sticky-div .bespoke-button-solid:last-child {
+      background-color: var(--primaryLight);
+      color: white;
+  }
+
+  .sticky-div .bespoke-button-solid:hover {
+      opacity: 0.9;
   }
 
   .sticky-div .bespoke-button-solid::after {
-    border-radius: var(--btn-b-radius);
+    display: none;
   }
 
   .cs-button-solid.sticky-button {
@@ -48,7 +70,7 @@
   }
 
 
-  @media (min-width: 821px) {
+  @media (min-width: 769px) {
     .sticky-div {
       display: none;
     }
