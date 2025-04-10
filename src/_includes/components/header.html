@@ -131,6 +131,90 @@
                     </picture>
                 </a>
             </div>
+            <nav class="bespoke-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="bespoke-toggle" aria-label="mobile menu toggle">
+                    <div class="bespoke-box" aria-hidden="true">
+                        <span class="bespoke-line bespoke-line1" aria-hidden="true"></span>
+                        <span class="bespoke-line bespoke-line2" aria-hidden="true"></span>
+                        <span class="bespoke-line bespoke-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the bespoke-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the bespoke-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                {# This also allows for easy substitution of CodeStitch navigations. Just replace the .bespoke-ul-wrapper in
+                the new navigation with this one to have full eleventyNavigation support #}
+                <div class="bespoke-ul-wrapper">
+                    <ul id="bespoke-expanded" class="bespoke-ul">
+                        {% set navPages = collections.all | eleventyNavigation %}
+
+                        {# Loop through all pages with a eleventyNavigation in the frontmatter #}
+                        {% for entry in navPages %}
+
+                        {# Define a hasChild variable to make it easier to test what navigation items are have child
+                        dropdown pages #}
+                        {% set hasChild = entry.children.length %}
+
+                        {# Check the frontmatter for hideOnMobile/hideOnDesktop. Form a list of classes to be joined
+                        when the item is rendered #}
+                        {% set hideClasses = [] %}
+                        {% if entry.hideOnMobile %}
+                        {% set hideClasses = (hideClasses.push("bespoke-hide-on-mobile"), hideClasses) %}
+                        {% endif %}
+                        {% if entry.hideOnDesktop %}
+                        {% set hideClasses = (hideClasses.push("bespoke-hide-on-desktop"), hideClasses) %}
+                        {% endif %}
+
+                        {# If this page is a dropdown, give it the appropriate classes, icons and accessibility
+                        attributes #}
+                        <li class="bespoke-li {% if hasChild %} bespoke-dropdown {% endif %} {{ hideClasses | join(" ") }}">
+
+                            {# If the page has child dropdown pages, render it as a <button> tag with the appropriate
+                                dropdown HTML #}
+                                {% if hasChild %}
+
+                                {# Check to see if the user's current page is one of the child pages. If so, apply the
+                                bespoke-active class to the dropdown parent #}
+                                {% set activeClass = "" %}
+                                {% for child in entry.children %}
+                                {% if child.url == page.url %}
+                                {% set activeClass = "bespoke-active" %}
+                                {% endif %}
+                                {% endfor %}
+
+                                {# Render the <button> with the active class, dropdown icon and child links #}
+                                    <button class="bespoke-li-link bespoke-dropdown-button {{ activeClass }}"
+                                        aria-expanded="false" aria-controls="dropdown-{{ entry.key }}"
+                                        aria-label="dropdown-{{ entry.key }}">
+                                        {{ entry.key }}
+                                        <img class="bespoke-drop-icon"
+                                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg"
+                                            alt="dropdown icon" width="15" height="15" decoding="async"
+                                            aria-hidden="true">
+                                    </button>
+
+                                    {# Dropdowns have another ul/li set up within the parent li, which gets rendered in
+                                    the same way as a normal link #}
+                                    <ul class="bespoke-drop-ul" id="dropdown-{{ entry.key }}">
+                                        {% for child in entry.children %}
+                                        <li class="bespoke-drop-li">
+                                            <a href="{{ child.url }}" class="bespoke-li-link bespoke-drop-link">{{ child.key
+                                                }}</a>
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
+                                    {% else %}
+                                    {# Normal pages are rendered as <a> tags, in the normal way you'd expect #}
+                                        <a href="{{ entry.url }}"
+                                            class="bespoke-li-link {% if entry.url == page.url %} bespoke-active {% endif %}" {%
+                                            if entry.url==page.url %} aria-current="page" {% endif %}>
+                                            {{ entry.key }}
+                                        </a>
+                                        {% endif %}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </nav>
         </div>
     </div>
     <!--Wrapped the bottom container in a wrapper div so we can have a full width background color, and centered the container inside of it-->
@@ -221,26 +305,6 @@
                     </ul>
                 </div>
             </nav>
-            <div class="btn-container" style="display: flex; gap: 8px;">
-                <a href="#" class="bespoke-button-solid"
-                 style="
-                 display: block;
-                 font-size: 12px;
-                 padding: 0;
-                 background: var(--primary);
-                 color: #fff;
-                 min-width: 130px;">
-                 Book Online</a>
-                <a href="tel:{{client.phoneForTel}}" class="bespoke-button-solid"
-                style="
-                display: block;
-                font-size: 12px;
-                padding: 0;
-                background: var(--primary);
-                color: #fff;
-                min-width: 130px;">
-                Call for Quote!</a>
-            </div>
         </div>
     </div>
 </header>
