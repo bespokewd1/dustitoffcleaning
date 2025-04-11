@@ -3,7 +3,7 @@ module.exports = {
     "logo": "https://bespoke-dustitoffcleaning.netlify.app/assets/images/dust-it-off-logo.png",
     "email": "dustitoffCS@gmail.com",
     "phoneForTel": "7803946644",
-    "phoneFormatted": "780 394 6644",
+    "phoneFormatted": "780-394-6644",
     "address": {
         "lineOne": "2183 Trumpeter Way",
         "lineTwo": "Edmonton, AB T5S 0K2",
