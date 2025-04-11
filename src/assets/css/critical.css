@@ -8,7 +8,7 @@
 /* Larger Desktop - 1600px (Parallax Effect) */
 @media only screen and (min-width: 100rem) {
   #hero-1299 .bespoke-background {
-    background: url("https://yegcarpetcleaning-draft.netlify.app/assets/images/yeg_cc-hero.webp");
+    background: url("/assets/images/hero-bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
