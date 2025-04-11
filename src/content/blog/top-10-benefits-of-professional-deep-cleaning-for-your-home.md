@@ -7,7 +7,7 @@ date: 2025-04-08T16:28:08.486Z
 tags:
     - post
     - featured
-image: ../../assets/images/carpet_3-after.jpg
+image: ../../assets/images/portfolio/3.jpg
 imageAlt: clean carpet
 ---
 
