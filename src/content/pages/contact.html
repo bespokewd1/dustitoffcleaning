@@ -87,7 +87,7 @@ eleventyNavigation:
                     <span class="bespoke-header">
                         Address
                     </span>
-                    <a href="https://maps.app.goo.gl/2v95qcLNJHxkGVjs5" class="bespoke-link">{{client.address.lineOne}}<br>
+                    <a href="{{ client.mapLink }}" class="bespoke-link">{{client.address.lineOne}}<br>
                         {{client.address.lineTwo}}
                         {{client.address.city}}
                         {{client.address.state}}
