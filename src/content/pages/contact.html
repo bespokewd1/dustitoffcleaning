@@ -44,23 +44,31 @@ eleventyNavigation:
             <!--Form-->
             <form netlify class="bespoke-form" id="bespoke-form-322" name="Contact Form" method="post">
                 <label class="bespoke-label">
-                    <input class="bespoke-input" required type="text" id="name-322" name="name" placeholder="Name">
-                </label>
-                <label class="bespoke-label bespoke-email">
-                    <input class="bespoke-input" required type="text" id="email-322" name="email" placeholder="Email">
+                    <input class="bespoke-input" required type="text" id="name-322" name="name" placeholder="Name*">
                 </label>
                 <label class="bespoke-label bespoke-phone">
-                    <input class="bespoke-input" required type="text" id="phone-322" name="phone" placeholder="Phone">
+                    <input class="bespoke-input" required type="text" id="phone-322" name="phone" placeholder="Phone*">
+                </label>
+                <label class="bespoke-label bespoke-email">
+                    <input class="bespoke-input" type="text" id="email-322" name="email" placeholder="Email">
                 </label>
                 <label class="bespoke-label bespoke-services">
-                    <select class="bespoke-input bespoke-select" required name="service" id="message-322" >
+                    <select class="bespoke-input bespoke-select" name="service" id="message-322" >
                         <option class="bespoke-option bespoke-option-placeholder bespoke-input" value="">Select Service</option>
-                        <option class="bespoke-option bespoke-input" value="Residential Cleaning">Residential Cleaning</option>
-                        <option class="bespoke-option bespoke-input" value="Commercial Cleaning">Commercial Cleaning</option>
-                        <option class="bespoke-option bespoke-input" value="Carpet Cleaning Cleaning">Carpet Cleaning Cleaning</option>
+                        <option class="bespoke-option bespoke-input" value="General Cleaning">General Cleaning</option>
+                        <option class="bespoke-option bespoke-input" value="Show Home Cleaning">Show Home Cleaning</option>
+                        <option class="bespoke-option bespoke-input" value="Move-In/Move-Out Cleaning">Move-In/Move-Out Cleaning</option>
+                        <option class="bespoke-option bespoke-input" value="Post-Construction Cleaning">Post-Construction Cleaning</option>
+                        <option class="bespoke-option bespoke-input" value="Post-Renovation Cleaning">Post-Renovation Cleaning</option>
                     </select>
                 </label>
-                <button class="bespoke-button-solid bespoke-submit" type="submit">Book Now</button>
+                <label class="bespoke-label bespoke-date">
+                    <input class="bespoke-input" type="date" id="phone2-322" name="date">
+                </label>
+                <label class="bespoke-label bespoke-message">
+                    <textarea class="bespoke-textarea" type="text" id="textarea-322" name="Message" placeholder="Message/Specific Requests"></textarea>
+                </label>
+                <button class="bespoke-button-solid bespoke-submit" type="submit">Submit</button>
             </form>
         </div>
         <div class="bespoke-right">
