@@ -18,6 +18,6 @@ module.exports = {
         "instagram": "https://www.instagram.com/",
         "youtube": "https://www.youtube.com/"
     },
-    "domain": "https://bespoke-dustitoffcleaning.netlify.app",
+    "domain": "https://dustitoffcleaningservices.ca",
     "tawkto": "https://embed.tawk.to/67041091cec6d0125df2d037/1i9ju1enk"
 };
